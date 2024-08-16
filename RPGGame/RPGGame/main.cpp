@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Questions.h"
+#include "Character.h"
 
 void main()
 {
@@ -109,8 +110,14 @@ void main()
 	vita -= dmg;
 	std::cout << "You have taken " << dmg << " damage." << std::endl;
 	std::cout << "Your current health is: " << vita << std::endl;
-	 
+	system("pause");
+	system("cls");
+	//Building a Character object
+	std::cout << "A new character has enter the relm" << std::endl;
 
+	Character playerOne;
+	playerOne.SetupStats("Todd", 100, 40, 60, 30);
+	playerOne.DisplayStats();
 
 
 
