@@ -3,10 +3,12 @@
 #include <string>
 #include "Questions.h"
 #include "Character.h"
+#include "Player.h"
+#include "Enemy.h"
 
 void main()
 {
-
+	/*
 	std::cout << "Greetings, what shall I call you?" << std::endl;
 
 	std::string name;
@@ -112,6 +114,10 @@ void main()
 	std::cout << "Your current health is: " << vita << std::endl;
 	system("pause");
 	system("cls");
+	
+	*/
+
+
 	//Building a Character object
 	std::cout << "A new character has enter the relm" << std::endl;
 
@@ -119,7 +125,19 @@ void main()
 	playerOne.SetupStats("Todd", 100, 40, 60, 30);
 	playerOne.DisplayStats();
 
+	Player playerTwo;
+	playerTwo.SetupStats("Bob", 50, 50, 50, 50);
+	playerTwo.DisplayStats();
 
+	Enemy glob("Glob", 100, 100, 30, 40, 10);
+	glob.DisplayStats();
+
+	playerOne.TakeDamage(glob.GetDamage());
+	glob.TakeDamage(playerTwo.SpecialAttack());
+	
+	playerOne.DisplayStats(); 
+	playerTwo.DisplayStats(); 
+	glob.DisplayStats();
 
 
 

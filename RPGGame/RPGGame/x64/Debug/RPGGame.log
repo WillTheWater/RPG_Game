@@ -1,2 +1,3 @@
-﻿  Character.cpp
+﻿  main.cpp
+C:\Dev\RPGGame\RPGGame\RPGGame\main.cpp(9,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
   RPGGame.vcxproj -> C:\Dev\RPGGame\RPGGame\x64\Debug\RPGGame.exe

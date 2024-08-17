@@ -25,3 +25,33 @@ void Character::DisplayStats()
 	std::cout << "    *          Dexterity: " << m_Dex << std::endl;
 	std::cout << "    *       Intelligence: " << m_Intel << std::endl;
 }
+
+int Character::GetVita()
+{
+	return m_Vita;
+}
+
+int Character::GetMaxVita()
+{
+	return m_MaxVita;
+}
+
+int Character::GetDex()
+{
+	return m_Dex;
+}
+
+int Character::GetDamage()
+{
+	return m_Str;
+}
+
+void Character::TakeDamage(int dmg)
+{
+	m_Vita -= dmg;
+}
+
+std::string Character::GetName()
+{
+	return m_Name;
+}
