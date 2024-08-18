@@ -139,7 +139,13 @@ void main()
 	playerTwo.DisplayStats(); 
 	glob.DisplayStats();
 
+	//Class Object Pointers
 
+	system("cls");
+	
+	Enemy* globPtr = new Enemy("Blob",50,50,50,50,50);
+	globPtr->DisplayStats();
+	delete globPtr;
 
 
 
