@@ -7,6 +7,7 @@ public:
 	~Enemy();
 
 	std::string GetName();
+	void MakeNoise();
 
 private:
 

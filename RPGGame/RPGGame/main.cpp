@@ -138,6 +138,7 @@ void main()
 	playerOne.DisplayStats(); 
 	playerTwo.DisplayStats(); 
 	glob.DisplayStats();
+	glob.MakeNoise();
 
 	//Class Object Pointers
 
@@ -145,10 +146,23 @@ void main()
 	
 	Enemy* globPtr = new Enemy("Blob",50,50,50,50,50);
 	globPtr->DisplayStats();
+	globPtr->MakeNoise();
 	delete globPtr;
 
 
-
+	std::cout << "----------------------------------------------------------------\n";
+	std::cout << "----------------------------------------------------------------\n";
+	// Polymorphism
+	// Referenceing a child of Character class(Treats child like a parent)
+	// Which means the child no longer can access it's unique features
+	Character* characterPtr = &glob;
+	characterPtr->DisplayStats();
+	// Casting
+	// Rereferncing the child as another type in the hierarchy.
+	// A new pointer
+	Enemy* globPtr2 = (Enemy*)characterPtr;
+	globPtr2->MakeNoise();
+	
 
 
 

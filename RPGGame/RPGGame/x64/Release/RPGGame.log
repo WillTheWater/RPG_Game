@@ -1,0 +1,11 @@
+﻿  Character.cpp
+  Enemy.cpp
+  main.cpp
+C:\Dev\RPGGame\RPGGame\RPGGame\main.cpp(9,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Player.cpp
+  Questions.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 105 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RPGGame.vcxproj -> C:\Dev\RPGGame\RPGGame\x64\Release\RPGGame.exe

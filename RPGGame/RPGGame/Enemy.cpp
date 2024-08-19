@@ -20,3 +20,8 @@ std::string Enemy::GetName()
 {
 	return m_Name;
 }
+
+void Enemy::MakeNoise()
+{
+	std::cout << GetName() << " grumbles loudly!" << std::endl;
+}
